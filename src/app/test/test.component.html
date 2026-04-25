@@ -1,0 +1,11 @@
+<div class="test-wrapper">
+    <p>מספר שאלות במערך: {{ questions().length }}</p>
+  <h2>המבחן שלי</h2>
+  <div class="list">
+    @for (q of questions(); track q.id) {
+      <app-question [question]="q"></app-question>
+    } @empty {
+      <p>אין שאלות להצגה.</p>
+    }
+  </div>
+</div>

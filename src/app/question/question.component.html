@@ -1,0 +1,10 @@
+<div class="question-container">
+  <h3>{{ question().question }}</h3> 
+  <div class="answers-grid">
+    @for (ans of question().answers; track $index) {
+      <button type="button" (click)="onAnswer(ans)">
+        {{ ans }}
+      </button>
+    }
+  </div>
+</div>

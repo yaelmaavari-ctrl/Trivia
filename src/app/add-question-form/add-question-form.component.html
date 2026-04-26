@@ -1,21 +1,21 @@
 <div class="add-form">
-  <h3>הוספת שאלה חדשה</h3>
+  <h3>add new question </h3>
   <div>
-    <label>שאלה:</label>
+    <label>question:</label>
     <input type="text" [(ngModel)]="newQtext">
   </div>
 
   <div class="answers-inputs">
-    <label>תשובות:</label>
+    <label>answers:</label>
     @for (ans of newAnswers; track $index) {
       <input type="text" [(ngModel)]="newAnswers[$index]" [placeholder]="'תשובה ' + $index">
     }
   </div>
 
   <div>
-    <label>אינדקס תשובה נכונה (0-3):</label>
+    <label>correct index answer(0-3)</label>
     <input type="number" [(ngModel)]="correctIdx">
   </div>
 
-  <button (click)="save()">הוסף למאגר</button>
+  <button (click)="save()">add</button>
 </div>

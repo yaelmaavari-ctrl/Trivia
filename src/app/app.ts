@@ -16,8 +16,6 @@ export class AppComponent {
     new Question('כמה ימים יש בשבוע?', ['5', '6', '7', '8'], 2)]
  
   addNewQuestionToList(newQuest: Question) {
-    console.log('השאלה הגיעה לאבא:', newQuest);
-    this.questionsList = [...this.questionsList, newQuest];
-  
+    this.questionsList = [...this.questionsList, newQuest]; 
   }
 }

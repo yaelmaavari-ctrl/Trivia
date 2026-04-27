@@ -8,7 +8,7 @@
   <div class="answers-inputs">
     <label>answers:</label>
     @for (ans of newAnswers; track $index) {
-      <input type="text" [(ngModel)]="newAnswers[$index]" [placeholder]="'תשובה ' + $index">
+      <input type="text" [(ngModel)]="newAnswers[$index]" [placeholder]="'answer ' + $index">
     }
   </div>
 

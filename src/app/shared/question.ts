@@ -4,12 +4,12 @@ export class Question {
   constructor(
     public question: string, 
     public answers: string[], 
-    public correctAnswerIndex: number
+    public correctAnswer: number
   ) {
     this.id = crypto.randomUUID();
   }
 
   checkAnswer(userAnswer: string): boolean {
-    return userAnswer === this.answers[this.correctAnswerIndex];
+    return userAnswer === this.answers[this.correctAnswer];
   }
 }

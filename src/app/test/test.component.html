@@ -1,7 +1,7 @@
 <div class="test-wrapper">
   <h2>My Test</h2>
   <div class="list">
-    @for (q of questions(); track q.id) {
+    @for (q of questions; track q.id) {
       <app-question [question]="q"></app-question>
     } @empty {
       <p>there are no questions</p>
